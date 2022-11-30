@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Mobile */
+.header {
+  height: 100px;
+  background-color: rgb(60 58 57);
+  position: relative;
+}
+
+.lo {
+  text-decoration: none;
+  width: 190px;
+  height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 64px;
+  top: 55px;
+}
+
+.fa-bars {
+  position: absolute;
+  right: 80px;
+  color: white;
+  margin-top: 10px;
+  top: 50px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  background: #1c1a19;
+  padding: 120px 64px;
+  position: relative;
+}
+
+.head {
+  width: 65rem;
+  height: 10rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 88px;
+  color: rgb(255 107 0);
+  margin-bottom: 45px;
+}
+
+.title {
+  width: 35rem;
+  height: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+}
+
+.para p {
+  width: 50rem;
+  height: 10rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  color: white;
+  margin-bottom: 8rem;
+}
+
+.icons {
+  display: flex;
+  gap: 13px;
+  margin-left: 10px;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.fas {
+  color: white;
+  font-size: 30px;
+}
+
+.bg-design {
+  visibility: hidden;
+  margin-bottom: 10rem;
+}
+
+.imga {
+  visibility: visible;
+  position: absolute;
+  right: -8px;
+  top: 58.25%;
+  transform: rotateY(60deg) skewY(-50deg);
+  width: 2rem;
+}
+
+.imgb {
+  visibility: visible;
+  position: absolute;
+  right: -8px;
+  top: 78.59%;
+  width: 8.5rem;
+}
+
+.imgc {
+  visibility: visible;
+  position: absolute;
+  right: 2.81%;
+  top: 76.09%;
+  background-color: #1c1a19;
+  width: 1.5rem;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+}
+
+.imge {
+  visibility: visible;
+  position: absolute;
+  right: 6.81%;
+  top: 92.09%;
+  width: 1.8rem;
+}
+
+.imgf {
+  visibility: visible;
+  position: absolute;
+  right: 3.81%;
+  top: 93.09%;
+  width: 1.5rem;
+}
+
+.imgf1 {
+  visibility: visible;
+  position: absolute;
+  right: 1.81%;
+  top: 94.89%;
+  width: 1.5rem;
+}
+
+.imgf2 {
+  visibility: visible;
+  position: absolute;
+  right: 5.81%;
+  top: 95.59%;
+  width: 1.5rem;
+}
+
+.imgf3 {
+  visibility: visible;
+  position: absolute;
+  right: 2.51%;
+  top: 97.09%;
+  width: 1.5rem;
+}
+
+.imgg {
+  visibility: visible;
+  position: absolute;
+  right: 4px;
+  top: 96.09%;
+  width: 1rem;
+}
+
+.imgh {
+  visibility: visible;
+  position: absolute;
+  right: 4px;
+  top: 90.09%;
+  width: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .lo {
+    font-size: 25px;
+    width: 90px;
+    height: 30px;
+    line-height: 10px;
+  }
+
+  .section1 {
+    gap: 10px;
+  }
+
+  .head {
+    font-size: 55px;
+    line-height: 48px;
+    margin-bottom: 0;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 22px;
+  }
+
+  .para p {
+    width: 400px;
+    line-height: 1.5rem;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    margin-left: 0;
+  }
+
+  .imga {
+    position: absolute;
+    right: -2px;
+    top: 55.25%;
+    transform: rotateY(60deg) skewY(-50deg);
+    width: 1.2rem;
+  }
+
+  .imgb {
+    position: absolute;
+    right: 0;
+    top: 75.59%;
+  }
+
+  .imgc {
+    position: absolute;
+    right: 9.81%;
+    top: 79.09%;
+    background-color: #1c1a19;
+    transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  }
+
+  .imge {
+    visibility: hidden;
+  }
+
+  .imgf {
+    position: absolute;
+    right: 5.81%;
+    top: 92.09%;
+  }
+
+  .imgf1 {
+    position: absolute;
+    right: 1.81%;
+    top: 94.09%;
+  }
+
+  .imgf2 {
+    position: absolute;
+    right: 7.81%;
+    top: 96.09%;
+  }
+
+  .imgf3 {
+    position: absolute;
+    right: 10.81%;
+    top: 95.09%;
+  }
+
+  .imgg {
+    position: absolute;
+    right: 0;
+    top: 97.09%;
+  }
+
+  .imgh {
+    position: absolute;
+    right: 0;
+    top: 90.09%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .lo {
+    font-size: 17px;
+    width: 90px;
+    height: 30px;
+    line-height: 10px;
+  }
+
+  .section1 {
+    gap: 5px;
+  }
+
+  .head {
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 0;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 12px;
+  }
+
+  .para p {
+    width: 400px;
+    line-height: 1rem;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .icons {
+    margin-left: 0;
+  }
+
+  .imga {
+    position: absolute;
+    right: -2px;
+    top: 55.25%;
+    transform: rotateY(60deg) skewY(-50deg);
+    width: 18px;
+  }
+
+  .imgb {
+    position: absolute;
+    right: 0;
+    top: 75.59%;
+    width: 6rem;
+  }
+
+  .imgc {
+    position: absolute;
+    right: 9.81%;
+    top: 76.09%;
+    background-color: #1c1a19;
+    transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  }
+
+  .imge {
+    position: absolute;
+    right: 13.81%;
+    top: 90.09%;
+  }
+
+  .imgf {
+    position: absolute;
+    right: 5.81%;
+    top: 90.09%;
+  }
+
+  .imgf1 {
+    position: absolute;
+    right: 1.81%;
+    top: 92.09%;
+  }
+
+  .imgf2 {
+    position: absolute;
+    right: 7.81%;
+    top: 95.09%;
+  }
+
+  .imgf3 {
+    position: absolute;
+    right: 10.81%;
+    top: 93.09%;
+  }
+
+  .imgg {
+    position: absolute;
+    right: 0;
+    top: 94.09%;
+  }
+
+  .imgh {
+    position: absolute;
+    right: 0;
+    top: 87.09%;
+  }
+}
