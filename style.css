@@ -89,10 +89,12 @@
   color: white;
   font-size: 30px;
 }
+
 .bg-design {
   visibility: hidden;
   margin-bottom: 10rem;
 }
+
 .imga {
   visibility: visible;
   position: absolute;
