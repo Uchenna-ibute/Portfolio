@@ -8,6 +8,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
 /* Mobile */
 .header {
   height: 100px;
@@ -190,6 +191,7 @@ body {
   body {
     width: 100%;
   }
+
   .lo {
     font-size: 25px;
     width: 90px;
@@ -291,6 +293,7 @@ body {
   body {
     width: 100%;
   }
+
   .lo {
     font-size: 17px;
     width: 90px;
