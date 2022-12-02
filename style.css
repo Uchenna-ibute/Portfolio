@@ -4,6 +4,10 @@
   font-size: 20px;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 /* Mobile */
 .header {
   height: 100px;
@@ -183,6 +187,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
   .lo {
     font-size: 25px;
     width: 90px;
@@ -281,6 +288,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
   .lo {
     font-size: 17px;
     width: 90px;
