@@ -108,9 +108,7 @@ body {
 }
 
 /* Contact section */
-.cont {
-  background-color: #fff;
-}
+
 
 @media screen and (max-width: 1200px) {
   .lo {
@@ -527,6 +525,7 @@ body {
 }
 
 .last {
+  background-color: #E5E5E5;;
   padding: 25px 30%;
   padding-top: 40px;
   border-top: 3px solid #dfe1e6;
