@@ -101,6 +101,11 @@
   top: 55%;
 }
 
+/* Contact section */
+.cont {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
   .lo {
     font-size: 25px;
