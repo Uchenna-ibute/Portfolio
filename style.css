@@ -4,6 +4,13 @@
   font-size: 20px;
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   height: 100px;
   width: 100%;
@@ -100,6 +107,8 @@
   top: 55%;
 }
 
+/* Contact section */
+
 @media screen and (max-width: 1200px) {
   .lo {
     font-size: 25px;
@@ -114,16 +123,11 @@
 
   .head {
     font-size: 55px;
-    line-height: 48px;
-    margin-bottom: 0;
-    height: 80px;
-    width: 350px;
+    margin-bottom: 5px;
   }
 
   .title {
     font-size: 35px;
-    line-height: 33px;
-    width: 300px;
   }
 
   .para p {
@@ -181,7 +185,7 @@
 }
 
 .work {
-  background-color: rgb(229 229 229);
+  background-color: #fff;
   padding: 120px 55px;
   display: grid;
   grid-template-columns: 1fr;
@@ -348,7 +352,8 @@
 
 .about {
   background: #1c1a19;
-  padding: 7rem 50px;
+  padding: 7rem 0;
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -383,72 +388,7 @@
 .block1 {
   position: absolute;
   right: 0;
-  top: 58.79%;
-  width: 50px;
-  z-index: 7;
-}
-
-.block2 {
-  position: absolute;
-  right: 20px;
-  top: 59.94%;
-  width: 65px;
-  z-index: 6;
-}
-
-.block3 {
-  position: absolute;
-  right: -70px;
-  top: 65.71%;
-  z-index: 4;
-  width: 9rem;
-}
-
-.block4 {
-  position: absolute;
-  right: 15px;
-  top: 65.83%;
-  transform: rotateY(180deg) skewX(40deg);
-  width: 15px;
-  z-index: 5;
-  background: #ff6b00;
-}
-
-.block5 {
-  position: absolute;
-  right: 55px;
-  top: 78.99%;
-  transform: rotateY(60deg);
-  z-index: 3;
-}
-
-.block6 {
-  position: absolute;
-  right: 80px;
-  top: 91.16%;
-}
-
-.block7 {
-  position: absolute;
-  right: 120px;
-  top: 91.19%;
-  width: 60px;
-  z-index: 1;
-}
-
-.block8 {
-  position: absolute;
-  width: 15.58px;
-  height: 15.58px;
-  right: 140.82px;
-  top: 92.55%;
-  z-index: 2;
-}
-
-.block9 {
-  position: absolute;
-  right: 95px;
-  top: 96.26%;
+  top: 40.79%;
 }
 
 .about-line {
@@ -500,18 +440,121 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 700px) {
-  .section1,
-  .work {
-    padding-left: 30px;
-  }
+.contact {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
 
-  .about {
-    padding: 4rem 0;
-  }
+.cont {
+  padding: 3.5rem 2rem;
+}
 
-  .about-line {
-    padding: 0 30px;
-    padding-bottom: 10rem;
-  }
+.contact-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 2.5rem;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  background-color: #fff;
+  border: none;
+  font-family: inherit;
+  border-bottom: 2px solid #dbd8d7;
+  width: 100%;
+  color: inherit;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 1.5rem 2.5rem rgb(0 0 0 / 10%);
+  border-bottom: 4px solid rgb(255 107 0);
+}
+
+.label {
+  display: none;
+}
+
+.area {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #fbf8f7;
+  border: none;
+  font-family: inherit;
+  color: #3c3a39;
+}
+
+.submit {
+  padding: 15px 12px;
+  background-color: #ff6b00;
+  text-align: center;
+  border: none;
+  margin: 15px 28%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  color: rgb(245 88 0);
+  background: rgb(255 245 225);
+  border: 1px solid rgb(245 88 0);
+}
+
+input[type="submit"]:active {
+  background-color: #e05304;
+  color: rgb(244 241 240);
+}
+
+input[type="submit"]:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.last {
+  background-color: #fff;
+  padding: 50px 32%;
+  padding-top: 40px;
+  border-top: 3px solid #dfe1e6;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.forms li {
+  list-style: none;
+}
+
+.icon {
+  display: flex;
+  gap: 13px;
+  margin-left: -50px;
+}
+
+.icon li {
+  list-style: none;
+  width: 30px;
+}
+
+.fa {
+  color: #505f79;
 }
