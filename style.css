@@ -442,21 +442,23 @@ body {
 
 .contact {
   background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
 }
 
 .cont {
-  padding: 8rem 2.5rem;
+  padding: 3.5rem 2rem;
 }
 
 .contact-text {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   text-align: center;
   color: #172b4d;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .input {
@@ -470,6 +472,7 @@ body {
   width: 100%;
   color: inherit;
   display: block;
+  margin-bottom: 10px;
 }
 
 .input:focus {
@@ -478,24 +481,11 @@ body {
   border-bottom: 4px solid rgb(255 107 0);
 }
 
-.input:focus:invalid {
-  border-bottom: 4px solid #7ed56f;
-}
 
 .label {
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-left: 0.8rem;
-  margin-top: 1rem;
-  transition: all 0.5;
+  display: none;
 }
 
-.input:placeholder-shown + .label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4px);
-}
 
 .area {
   margin-top: 15px;
@@ -511,26 +501,44 @@ body {
   background-color: #ff6b00;
   text-align: center;
   border: none;
-  margin: 50px 28%;
+  margin: 15px 28%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.03em;
   border-radius: 12px;
   box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
   color: #fff;
 }
+input[type=submit]:hover {
+  color: rgb(245 88 0);
+  background: rgb(255 245 225);
+  border: 1px solid rgb(245 88 0);
+}
+
+input[type=submit]:active {
+  background-color:  #E05304;
+  color: rgb(244 241 240);
+}
+
+input[type=submit]:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 
 .last {
   background-color: #e5e5e5;
-  padding: 25px 30%;
+  padding: 50px 32%;
   padding-top: 40px;
   border-top: 3px solid #dfe1e6;
 }
 
 .forms {
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
