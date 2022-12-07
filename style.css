@@ -185,7 +185,7 @@ body {
 }
 
 .work {
-  background-color: rgb(229 229 229);
+  background-color: #fff;
   padding: 120px 55px;
   display: grid;
   grid-template-columns: 1fr;
@@ -441,7 +441,7 @@ body {
 }
 
 .contact {
-  background-color: #e5e5e5;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -454,8 +454,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   color: #172b4d;
   margin-bottom: 2.5rem;
@@ -465,7 +465,7 @@ body {
   font-size: 1rem;
   padding: 0.8rem 1rem;
   border-radius: 3px;
-  background-color: #e5e5e5;
+  background-color: #fff;
   border: none;
   font-family: inherit;
   border-bottom: 2px solid #dbd8d7;
@@ -492,6 +492,7 @@ body {
   background-color: #fbf8f7;
   border: none;
   font-family: inherit;
+  color: #3c3a39;
 }
 
 .submit {
@@ -506,7 +507,6 @@ body {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border-radius: 12px;
   box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
   color: #fff;
 }
@@ -528,7 +528,7 @@ input[type="submit"]:disabled {
 }
 
 .last {
-  background-color: #e5e5e5;
+  background-color: #fff;
   padding: 50px 32%;
   padding-top: 40px;
   border-top: 3px solid #dfe1e6;
@@ -552,6 +552,9 @@ input[type="submit"]:disabled {
 
 .icon li {
   list-style: none;
-  background-color: #505f79;
   width: 30px;
+}
+
+.fa {
+  color: #505f79;
 }
