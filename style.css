@@ -481,11 +481,9 @@ body {
   border-bottom: 4px solid rgb(255 107 0);
 }
 
-
 .label {
   display: none;
 }
-
 
 .area {
   margin-top: 15px;
@@ -512,22 +510,22 @@ body {
   box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
   color: #fff;
 }
-input[type=submit]:hover {
+
+input[type="submit"]:hover {
   color: rgb(245 88 0);
   background: rgb(255 245 225);
   border: 1px solid rgb(245 88 0);
 }
 
-input[type=submit]:active {
-  background-color:  #E05304;
+input[type="submit"]:active {
+  background-color: #e05304;
   color: rgb(244 241 240);
 }
 
-input[type=submit]:disabled {
+input[type="submit"]:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
-
 
 .last {
   background-color: #e5e5e5;
