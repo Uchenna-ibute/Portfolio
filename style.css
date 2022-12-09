@@ -98,8 +98,6 @@ body {
   top: 45%;
 }
 
-
-
 .work {
   background-color: #fff;
   padding: 120px 55px;
@@ -267,7 +265,6 @@ body {
   text-align: center;
 }
 
-
 .about {
   background: #1c1a19;
   padding: 7rem 0;
@@ -357,7 +354,6 @@ body {
   display: flex;
   gap: 20px;
 }
-
 
 .contact {
   background-color: #fff;
@@ -477,32 +473,38 @@ input[type="submit"]:disabled {
 .fa {
   color: #505f79;
 }
+
 @media screen and (min-width: 768px) {
-  
   .lo {
     font-size: 20px;
     width: 90px;
     height: 30px;
     line-height: 10px;
   }
+
   .menu {
     top: 40px;
   }
+
   .fa-bars {
     display: none;
   }
+
   .let {
     display: flex;
     gap: 25px;
   }
-  .let li{
+
+  .let li {
     list-style: none;
   }
+
   .let a {
     text-decoration: none;
     color: white;
     font-size: 15px;
   }
+
   .section1 {
     gap: 10px;
     padding-left: 5px;
@@ -526,11 +528,11 @@ input[type="submit"]:disabled {
     line-height: 32px;
     margin-bottom: 20px;
   }
+
   .whole {
     display: flex;
     gap: 100px;
   }
-  
 
   .icons {
     margin-left: 0;
@@ -538,99 +540,120 @@ input[type="submit"]:disabled {
     flex-direction: column;
     margin-top: 60px;
   }
+
   .fas {
     font-size: 20px;
   }
+
   .nxt {
     display: none;
   }
+
   .not {
     position: absolute;
     right: 0;
     top: 0;
     width: 30%;
   }
+
   .work {
     padding: 160px;
   }
+
   .work-head {
     border: none;
   }
+
   .group {
     display: flex;
     gap: 15px;
   }
+
   .imge img {
     margin-top: 35px;
   }
+
   .imge-txt {
     font-size: 40px;
     line-height: 52px;
   }
+
   .work1-img {
     width: 684px;
     height: 448px;
   }
+
   .work-head2 {
-    font-family: 'Crete Round';
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
   }
+
   .work1-para {
     width: 448px;
     height: 140px;
-    font-family: 'Inter';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
   }
+
   .work1-list li {
     padding: 10px 12px;
     font-size: 15px;
-   
   }
+
   .work-menu {
     margin-bottom: 30px;
   }
+
   .p {
     margin-left: -40px;
   }
+
   .btn {
     padding: 12px;
     font-size: 17px;
     line-height: 24px;
     margin-top: 60px;
   }
+
   .gridy {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     gap: 15px;
   }
-  
+
   .work-title2a {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(img/Img\ Placeholder\ \(1\).png);
+    background-image: linear-gradient(180.45deg, rgb(38 38 38 / 0%) 0.75%, rgb(38 38 38 / 90%) 84.18%), url("img/Img\ \(1\).png");
   }
+
   .go {
     visibility: hidden;
   }
+
   .be {
-    background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(img/Img\ Placeholder\ \(2\).png);
+    background-image: linear-gradient(179.35deg, rgb(38 38 38 / 0%) 0.85%, rgb(38 38 38 / 90%) 84%), url("img/Img\ \(2\).png");
   }
+
   .bee {
-    background-image: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(img/Img\ Placeholder\ \(3\).png);
+    background-image: linear-gradient(179.4deg, rgb(38 38 38 / 0%) 0.81%, rgb(38 38 38 / 90%) 84.03%), url("img/Img\ \(3\).png");
   }
-  .be a,.bee a {
+
+  .be a,
+  .bee a {
     display: none;
   }
+
   .bee h1 {
     margin-top: 20px;
   }
+
   .work-he {
-    font-size: 32px;
     color: white;
     line-height: 44px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -639,90 +662,106 @@ input[type="submit"]:disabled {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .work-head22 {
     visibility: hidden;
   }
-  .work2-para{
+
+  .work2-para {
     font-size: 17px;
     line-height: 24px;
-    
   }
+
   .bet li {
     font-size: 15px;
     line-height: 20px;
   }
+
   .about {
     padding: 160px;
     padding-right: 0;
   }
+
   .about-title {
     font-size: 72px;
     line-height: 82px;
   }
+
   .about-para {
     width: 566px;
-   height: 148px;
-   font-size: 20px;
-   line-height: 32px;
+    height: 148px;
+    font-size: 20px;
+    line-height: 32px;
   }
+
   .btn2 {
     padding: 12px;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
   }
+
   .block1 {
+    font-family: Arial, Helvetica, sans-serif;
     display: none;
   }
+
   .block2 {
     position: absolute;
     right: 0;
     top: 1.79%;
     width: 40%;
   }
+
   .lang {
     flex-direction: row;
     gap: 15%;
     align-items: initial;
     padding: 5% 0;
   }
-  .big, .small{
+
+  .big,
+  .small {
     text-align: left;
   }
+
   .contact {
     padding: 60px 160px;
-    
   }
+
   .cont {
     display: flex;
     flex-direction: row;
     gap: 4%;
   }
-  
+
   .contact-text {
     width: 450px;
     height: 18px;
-    font-family: 'Inter';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     text-align: left;
   }
-  .input{
+
+  .input {
     width: 700px;
     height: 18px;
     left: 16px;
     right: 16px;
-    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
   }
+
   .submit {
     margin: 15px 0;
   }
+
   .last {
     padding: 20px 45%;
   }
@@ -739,6 +778,7 @@ input[type="submit"]:disabled {
     height: 30px;
     line-height: 10px;
   }
+
   .let {
     display: none;
   }
@@ -768,9 +808,11 @@ input[type="submit"]:disabled {
   .icons {
     margin-left: 0;
   }
-  .not, .imge, .block2, .work-he {
+
+  .not,
+  .imge,
+  .block2,
+  .work-he {
     display: none;
   }
-
-  
 }
