@@ -56,6 +56,24 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: rgb(255 107 0);
+  
+  
+}
+.main {
+  display: block;
+  animation-name: left; 
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  font-size: 72px;
+  line-height: 82px;
+}
+.sub {
+  display: block;
+  animation-name: right;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  font-size: 72px;
+  line-height: 82px;
 }
 
 .title {
@@ -67,7 +85,32 @@ body {
   align-items: center;
   color: #fff5e1;
 }
-
+@keyframes left {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes right {
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  80% {
+      transform: translateX(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
 .para p {
   font-family: sans-serif;
   font-weight: 400;
@@ -127,7 +170,13 @@ body {
   border-bottom: 1px solid black;
   margin-bottom: 50px;
 }
-
+.work1-img {
+  box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, .15);
+  transition: transform .3s;
+}
+.work1-img:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
 .work-head2 {
   width: 327px;
   height: 36px;
@@ -139,6 +188,7 @@ body {
   align-items: center;
   color: #091e42;
 }
+
 
 .work1-para {
   width: 327px;
@@ -153,6 +203,7 @@ body {
 .work1-list {
   display: flex;
   gap: 20px;
+  margin-bottom: 25px;
 }
 
 .p {
@@ -178,7 +229,9 @@ body {
   width: 124px;
   text-align: center;
 }
-
+.one {
+  transition: all .5s;
+}
 .one:hover {
   color: rgb(245 88 0);
   background: rgb(255 245 225);
@@ -424,6 +477,7 @@ body {
   letter-spacing: 0.03em;
   box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
   color: #fff;
+  transition: all .3s;
 }
 
 input[type="submit"]:hover {
@@ -569,10 +623,10 @@ input[type="submit"]:disabled {
     gap: 15px;
   }
 
-  .imge img {
+  .imge-img {
     margin-top: 35px;
   }
-
+  
   .imge-txt {
     font-size: 40px;
     line-height: 52px;
@@ -581,6 +635,11 @@ input[type="submit"]:disabled {
   .work1-img {
     width: 684px;
     height: 448px;
+    box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, .15);
+    transition: transform .3s;
+  }
+  .work1-img:hover {
+    transform: translateY(-1.5rem) scale(1.03);
   }
 
   .work-head2 {
