@@ -52,7 +52,7 @@ body {
 .ax {
   display: block;
   font-family: Inter, sans-serif;
-  padding: 20px 10px 15px 10px;
+  padding: 20px 10px 15px;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -608,7 +608,6 @@ input[type="submit"]:disabled {
     line-height: 82px;
   }
 
-
   .fa-envelope {
     color: white;
     position: absolute;
@@ -637,9 +636,6 @@ input[type="submit"]:disabled {
     color: white;
     font-size: 15px;
   }
-
-
-
 
   .section1 {
     gap: 10px;
@@ -932,7 +928,6 @@ input[type="submit"]:disabled {
     font-size: 32px;
     line-height: 52px;
   }
-
 
   .let {
     display: none;
