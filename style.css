@@ -35,6 +35,7 @@ body {
 }
 
 .dropdown-menu {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background: #3C3A39;
@@ -44,7 +45,7 @@ body {
   top: 0;
   padding: 20px;
   padding-bottom: 40px;
-  padding-right: 53px;
+  padding-right: 35px;
   z-index: 3;
 }
 
@@ -62,7 +63,6 @@ body {
   text-decoration: none;
   border-bottom: 2px solid #FFF5E1;
 }
-
 
 .xmark {
   margin-left: 400px;
@@ -85,6 +85,22 @@ body {
   color: white;
   margin-top: 10px;
   top: 50px;
+}
+.half {
+  height: 10vh;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  width: 100%;
+}
+.imge-half {
+  margin-top: 7vh;
+  margin-left: 40%;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  border-radius: 15px;
 }
 .section1 {
   display: flex;
