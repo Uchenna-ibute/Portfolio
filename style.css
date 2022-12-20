@@ -34,14 +34,58 @@ body {
   top: 55px;
 }
 
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background: #3C3A39;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-right: 53px;
+  z-index: 3;
+}
+
+.ax {
+ display: block;
+  font-family: 'Inter', sans-serif;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+  text-decoration: none;
+  border-bottom: 2px solid #FFF5E1;
+}
+
+
+.xmark {
+  margin-left: 400px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #67798E;
+}
+
+.hide {
+  display: none;
+}
+
+.fa-bars {
+  display: block;
+  cursor: pointer;
+}
 .menu {
   position: absolute;
-  right: 80px;
+  right: 200px;
   color: white;
   margin-top: 10px;
   top: 50px;
 }
-
 .section1 {
   display: flex;
   flex-direction: column;
@@ -58,22 +102,6 @@ body {
   color: rgb(255 107 0);
   
   
-}
-.main {
-  display: block;
-  animation-name: left; 
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  font-size: 72px;
-  line-height: 82px;
-}
-.sub {
-  display: block;
-  animation-name: right;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  font-size: 72px;
-  line-height: 82px;
 }
 
 .title {
@@ -230,7 +258,7 @@ body {
   text-align: center;
 }
 .one {
-  transition: all .5s;
+  transition: all 3s;
 }
 .one:hover {
   color: rgb(245 88 0);
@@ -535,7 +563,31 @@ input[type="submit"]:disabled {
     height: 30px;
     line-height: 10px;
   }
+  .main {
+    display: block;
+    animation-name: left; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-size: 72px;
+    line-height: 82px;
+  }
+  .sub {
+    display: block;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-size: 72px;
+    line-height: 82px;
+  }
 
+
+  
+ .fa-envelope {
+    color: white;
+    position: absolute;
+    right: -50px;
+
+  }
   .menu {
     top: 40px;
   }
@@ -559,6 +611,9 @@ input[type="submit"]:disabled {
     font-size: 15px;
   }
 
+  
+
+  
   .section1 {
     gap: 10px;
     padding-left: 5px;
@@ -837,11 +892,26 @@ input[type="submit"]:disabled {
     height: 30px;
     line-height: 10px;
   }
-
+  .main {
+    display: block;
+    font-size: 52px;
+    line-height: 52px;
+  }
+  .sub {
+    display: block;
+    font-size: 32px;
+    line-height: 52px;
+  }
+  
+  
   .let {
     display: none;
   }
 
+  .menu {
+    right: 100px;
+    top: 40px;
+  }
   .section1 {
     gap: 5px;
   }
