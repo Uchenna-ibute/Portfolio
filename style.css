@@ -34,12 +34,73 @@ body {
   top: 55px;
 }
 
+.dropdown-menu {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #3c3a39;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-right: 35px;
+  z-index: 3;
+}
+
+.ax {
+  display: block;
+  font-family: Inter, sans-serif;
+  padding: 20px 10px 15px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 22px;
+  color: #fff5e1;
+  text-decoration: none;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.xmark {
+  margin-left: 270px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #67798e;
+}
+
+.hide {
+  display: none;
+}
+
+.fa-bars {
+  display: block;
+  cursor: pointer;
+}
+
 .menu {
   position: absolute;
-  right: 80px;
+  right: 200px;
   color: white;
   margin-top: 10px;
   top: 50px;
+}
+
+.half {
+  height: 10vh;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  width: 100%;
+}
+
+.imge-half {
+  margin-top: 7vh;
+  margin-left: 40%;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  border-radius: 15px;
 }
 
 .section1 {
@@ -66,6 +127,38 @@ body {
   display: flex;
   align-items: center;
   color: #fff5e1;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .para p {
@@ -128,6 +221,15 @@ body {
   margin-bottom: 50px;
 }
 
+.work1-img {
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+}
+
+.work1-img:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
 .work-head2 {
   width: 327px;
   height: 36px;
@@ -153,6 +255,7 @@ body {
 .work1-list {
   display: flex;
   gap: 20px;
+  margin-bottom: 25px;
 }
 
 .p {
@@ -177,6 +280,10 @@ body {
   background-color: rgb(255 107 0);
   width: 124px;
   text-align: center;
+}
+
+.one {
+  transition: all 0.8s;
 }
 
 .one:hover {
@@ -424,6 +531,7 @@ body {
   letter-spacing: 0.03em;
   box-shadow: 0 2.5rem 3.5rem rgb(27 27 27 / 10%);
   color: #fff;
+  transition: all 0.3s;
 }
 
 input[type="submit"]:hover {
@@ -474,12 +582,140 @@ input[type="submit"]:disabled {
   color: #505f79;
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  display: none;
+  width: 100%;
+  background: rgb(26 34 54 / 95%);
+  height: 100vh;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-box {
+  width: 77%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.m-img {
+  width: 659px;
+  height: 448px;
+  background-size: cover;
+}
+
+.modal-btn-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-btn {
+  background-color: #f55800;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 134px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.name {
+  width: 1056px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  top: 0;
+  left: 30px;
+  color: #172b4d;
+}
+
+.lg-lt {
+  width: 50%;
+  margin: 10px 0;
+  padding: 8px 3px;
+}
+
+.fass {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background-color: white;
+  border: none;
+}
+
+.grouping {
+  position: relative;
+}
+
+.pj-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+}
+
 @media screen and (min-width: 768px) {
+  body.modal-active {
+    height: 220vh;
+  }
+
   .lo {
     font-size: 20px;
     width: 90px;
     height: 30px;
     line-height: 10px;
+  }
+
+  .main {
+    display: block;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .sub {
+    display: block;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .fa-envelope {
+    color: white;
+    position: absolute;
+    right: -50px;
   }
 
   .menu {
@@ -569,7 +805,7 @@ input[type="submit"]:disabled {
     gap: 15px;
   }
 
-  .imge img {
+  .imge-img {
     margin-top: 35px;
   }
 
@@ -581,6 +817,12 @@ input[type="submit"]:disabled {
   .work1-img {
     width: 684px;
     height: 448px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    transition: transform 0.3s;
+  }
+
+  .work1-img:hover {
+    transform: translateY(-1.5rem) scale(1.03);
   }
 
   .work-head2 {
@@ -765,6 +1007,42 @@ input[type="submit"]:disabled {
   .last {
     padding: 20px 45%;
   }
+
+  .modal {
+    width: 100%;
+    background: rgb(26 34 54 / 75%);
+    height: 100vh;
+    position: fixed;
+  }
+
+  .modal-box {
+    margin: 10%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-box .pjname {
+    margin: 0;
+  }
+
+  .main-img {
+    height: 78vh;
+  }
+
+  .img-lists {
+    height: 20vh;
+  }
+
+  .modal-btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .modal-btn:last-child {
+    margin: 5%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -779,8 +1057,31 @@ input[type="submit"]:disabled {
     line-height: 10px;
   }
 
+  .main {
+    display: block;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .sub {
+    display: block;
+    font-size: 32px;
+    line-height: 52px;
+  }
+
   .let {
     display: none;
+  }
+
+  .menu {
+    right: 100px;
+    top: 40px;
+  }
+
+  .fa-solid {
+    font-weight: 900;
+    margin-right: -40px;
+    margin-bottom: 30px;
   }
 
   .section1 {
@@ -814,5 +1115,15 @@ input[type="submit"]:disabled {
   .block2,
   .work-he {
     display: none;
+  }
+
+  .modal-box {
+    width: 343px;
+    height: 718px;
+    margin: 8% 3%;
+  }
+
+  .lg-lt {
+    margin: 30px 0;
   }
 }
