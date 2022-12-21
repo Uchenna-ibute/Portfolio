@@ -58,7 +58,7 @@ body {
   line-height: 22px;
   color: #fff5e1;
   text-decoration: none;
-  border-bottom: 2px solid #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .xmark {
@@ -601,7 +601,7 @@ input[type="submit"]:disabled {
   width: 100%;
   height: auto;
   background-color: #fff;
-  padding: 6.25vw;
+  padding: 20px;
   margin: 0;
   position: relative;
 }
@@ -706,6 +706,18 @@ input[type="submit"]:disabled {
   width: 90%;
   margin: 20px 0;
   padding: 8px 3px;
+}
+
+.fass {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background-color: white;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1039,25 +1051,15 @@ input[type="submit"]:disabled {
     background: rgb(26 34 54 / 95%);
     height: 100vh;
     position: fixed;
-    padding-top: 50px;
   }
 
   .modal-box {
     width: 80%;
+    height: 70%;
     margin: 10%;
-    padding-top: 5%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-  }
-
-  .fass {
-    position: relative;
-  }
-
-  .name {
-    position: absolute;
-    top: 40px;
-    left: 50px;
   }
 
   .modal-box .pjname {
