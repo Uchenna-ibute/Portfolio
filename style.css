@@ -582,6 +582,19 @@ input[type="submit"]:disabled {
   color: #505f79;
 }
 
+.message {
+  width: 100%;
+  background-color: #fff;
+  color: rgb(205 0 0);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  border: 1px solid rgb(205 0 0);
+  border-radius: 4px;
+  padding: 2%;
+  display: none;
+}
+
 .modal {
   position: fixed;
   left: 0;
