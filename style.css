@@ -582,14 +582,7 @@ input[type="submit"]:disabled {
   color: #505f79;
 }
 
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 4;
-  display: none;
-  background-color: rgb(26 34 54 / 75%);
-}
+/* write here */
 
 .modal.active {
   display: block;
