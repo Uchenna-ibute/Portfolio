@@ -25,7 +25,7 @@ const projectDetails = [{
     'JavaScript',
   ],
   live: 'https://github.com/Uchenna-ibute/Portfolio',
-  source: 'https://github.com/Uchenna-ibute',
+  source: 'https://github.com/Uchenna-ibute'
 }
 ];
 
