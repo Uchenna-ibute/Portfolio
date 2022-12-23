@@ -90,6 +90,12 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+
+<!-- Loom -->
+
+https://www.loom.com/share/f9772ed77fb644378445d669b88fab24
+
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -108,7 +114,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]( https://uchenna-ibute.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
