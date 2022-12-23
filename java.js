@@ -158,6 +158,8 @@ for (let i = 0; i < projectCards.length; i += 1) {
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
+const name = document.querySelector('input[type="text"]');
+const text = document.querySelector('textarea');
 
 function showError(m) {
   msg.style.display = 'block';
@@ -183,4 +185,23 @@ function checkLowerCase(input) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
+});
+
+const valueInput = JSON.parse(localStorage.getItem('valueInput'));
+
+function addVale(n, e, t) {
+  valueInput.push({ n, e, t });
+  localStorage.setItem('valueInput', JSON.stringify(valueInput));
+  return { n, e, t };
+}
+
+function showNow({ n, e, t }) {
+  name.value = n;
+  email.value = e;
+  text.value = t;
+}
+
+form.addEventListener('change', (event) => {
+  event.preventDefault();
+  addVale(name.value, email.value, text.value);
 });
