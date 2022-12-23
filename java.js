@@ -155,8 +155,6 @@ for (let i = 0; i < projectCards.length; i += 1) {
   });
 }
 
-
-
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
@@ -173,7 +171,6 @@ function showSuccess(mass) {
   msg.innerText = mass;
 }
 
-
 function checkLowerCase(input) {
   if (input.value !== input.value.toLowerCase()) {
     showError('please write the email in lowercase');
@@ -182,10 +179,8 @@ function checkLowerCase(input) {
     form.submit();
   }
 }
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
 });
-
-
-
