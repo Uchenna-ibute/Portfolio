@@ -158,7 +158,7 @@ for (let i = 0; i < projectCards.length; i += 1) {
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
-const name = document.querySelector('input[type="text"]');
+const namee = document.querySelector('input[type="text"]');
 const text = document.querySelector('textarea');
 
 function showError(m) {
@@ -196,7 +196,7 @@ function addVale(n, e, t) {
 }
 
 function showNow({ n, e, t }) {
-  name.value = n;
+  namee.value = n;
   email.value = e;
   text.value = t;
 }
@@ -205,5 +205,5 @@ valueInput.forEach(showNow);
 
 form.addEventListener('change', (event) => {
   event.preventDefault();
-  addVale(name.value, email.value, text.value);
+  addVale(namee.value, email.value, text.value);
 });
