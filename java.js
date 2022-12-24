@@ -194,7 +194,7 @@ function addVale(n, e, t) {
   localStorage.setItem('valueInput', JSON.stringify(valueInput));
   return { n, e, t };
 }
-let v = 'boy'
+
 
 function showNow({ n, e, t }) {
   namee.value = n;
