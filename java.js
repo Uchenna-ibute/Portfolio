@@ -2,6 +2,8 @@ const bar = document.querySelector('.fa-bars');
 const menu = document.querySelector('.dropdown-menu');
 const mark = document.querySelector('.xmark');
 const Items = document.querySelectorAll('.menu .ax');
+const namee = document.querySelector('input#name');
+const text = document.querySelector('textarea');
 bar.addEventListener('click', () => {
   menu.classList.toggle('hide');
 });
@@ -183,4 +185,25 @@ function checkLowerCase(input) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   checkLowerCase(email);
+});
+
+const valueInput = JSON.parse(localStorage.getItem('valueInput')) || [];
+
+function addVale(n, e, t) {
+  valueInput.push({ n, e, t });
+  localStorage.setItem('valueInput', JSON.stringify(valueInput));
+  return { n, e, t };
+}
+
+function showNow({ n, e, t }) {
+  namee.value = n;
+  email.value = e;
+  text.value = t;
+}
+
+valueInput.forEach(showNow);
+
+form.addEventListener('change', (event) => {
+  event.preventDefault();
+  addVale(namee.value, email.value, text.value);
 });
