@@ -195,13 +195,13 @@ function addVale(n, e, t) {
   return { n, e, t };
 }
 
-valueInput.forEach(showNow);
-
 function showNow({ n, e, t }) {
   name.value = n;
   email.value = e;
   text.value = t;
 }
+
+valueInput.forEach(showNow);
 
 form.addEventListener('change', (event) => {
   event.preventDefault();
