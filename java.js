@@ -195,7 +195,6 @@ function addVale(n, e, t) {
   return { n, e, t };
 }
 
-
 function showNow({ n, e, t }) {
   namee.value = n;
   email.value = e;
