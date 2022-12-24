@@ -194,12 +194,14 @@ function addVale(n, e, t) {
   localStorage.setItem('valueInput', JSON.stringify(valueInput));
   return { n, e, t };
 }
-inputDatas.forEach(showData);
+
 function showNow({ n, e, t }) {
   name.value = n;
   email.value = e;
   text.value = t;
 }
+
+inputDatas.forEach(showData);
 
 form.addEventListener('change', (event) => {
   event.preventDefault();
