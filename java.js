@@ -2,6 +2,8 @@ const bar = document.querySelector('.fa-bars');
 const menu = document.querySelector('.dropdown-menu');
 const mark = document.querySelector('.xmark');
 const Items = document.querySelectorAll('.menu .ax');
+const namee = document.querySelector('input#name');
+const text = document.querySelector('textarea');
 bar.addEventListener('click', () => {
   menu.classList.toggle('hide');
 });
@@ -158,8 +160,6 @@ for (let i = 0; i < projectCards.length; i += 1) {
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
 const msg = document.querySelector('form .message');
-const namee = document.querySelector('input[type="text"]');
-const text = document.querySelector('textarea');
 
 function showError(m) {
   msg.style.display = 'block';
