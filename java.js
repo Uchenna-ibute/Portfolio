@@ -201,4 +201,7 @@ function showNow({ n, e, t }) {
   text.value = t;
 }
 
-// write here
+form.addEventListener('change', (event) => {
+  event.preventDefault();
+  addVale(name.value, email.value, text.value);
+});
