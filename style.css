@@ -188,15 +188,13 @@ body {
 .nxt {
   position: absolute;
   right: 0;
-  top: 45%;
+  top: 50%;
 }
 
 .work {
   background-color: #fff;
-  padding: 120px 55px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  padding: 120px;
+  
 }
 
 .work-title1 {
@@ -231,7 +229,6 @@ body {
 }
 
 .work-head2 {
-  width: 327px;
   height: 36px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 400;
@@ -243,7 +240,6 @@ body {
 }
 
 .work1-para {
-  width: 327px;
   height: 147px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -259,7 +255,7 @@ body {
 }
 
 .p {
-  margin-left: -60px;
+  margin-left: -35px;
 }
 
 .work1-list li {
@@ -415,8 +411,7 @@ body {
 
 .about-line {
   position: relative;
-  padding-bottom: 10rem;
-  border-bottom: 1px solid rgb(255 255 255);
+  padding-bottom: 8rem;
   overflow: hidden;
 }
 
@@ -427,7 +422,8 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  padding: 30% 15px;
+  padding: 25% 0;
+  border-top: 1px solid rgb(255 255 255);
 }
 
 .lang li {
@@ -469,7 +465,7 @@ body {
 }
 
 .cont {
-  padding: 3.5rem 2rem;
+  padding: 3.5rem 0rem;
 }
 
 .contact-text {
@@ -714,6 +710,7 @@ input[type="submit"]:disabled {
     width: 90px;
     height: 30px;
     line-height: 10px;
+    left: 100px;
   }
 
   .main {
@@ -721,8 +718,8 @@ input[type="submit"]:disabled {
     animation-name: left;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 61px;
+    line-height: 52px;
   }
 
   .sub {
@@ -730,8 +727,8 @@ input[type="submit"]:disabled {
     animation-name: right;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 52px;
+    line-height: 62px;
   }
 
   .fa-envelope {
@@ -763,6 +760,7 @@ input[type="submit"]:disabled {
     font-size: 15px;
   }
 
+
   .section1 {
     gap: 10px;
     padding-left: 5px;
@@ -775,12 +773,12 @@ input[type="submit"]:disabled {
   }
 
   .title {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
   }
 
   .para p {
-    width: 666px;
+    width: 526px;
     height: 123px;
     font-size: 20px;
     line-height: 32px;
@@ -789,7 +787,7 @@ input[type="submit"]:disabled {
 
   .whole {
     display: flex;
-    gap: 100px;
+    gap: 40px;
   }
 
   .icons {
@@ -812,17 +810,18 @@ input[type="submit"]:disabled {
     right: 0;
     top: 0;
     width: 30%;
+    height: 80vh;
   }
 
   .work {
-    padding: 160px;
+    padding: 120px;
   }
 
   .work-head {
     border: none;
   }
 
-  .group {
+  .groupp {
     display: flex;
     gap: 15px;
   }
@@ -886,9 +885,12 @@ input[type="submit"]:disabled {
   }
 
   .gridy {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .oneg {
+    display: flex;
     gap: 15px;
   }
 
@@ -942,7 +944,7 @@ input[type="submit"]:disabled {
   }
 
   .about {
-    padding: 160px;
+    padding: 120px;
     padding-right: 0;
   }
 
@@ -979,9 +981,10 @@ input[type="submit"]:disabled {
 
   .lang {
     flex-direction: row;
-    gap: 15%;
+    gap: 25%;
     align-items: initial;
-    padding: 5% 0;
+    padding: 15% 0;
+    padding-right: 130px;
   }
 
   .big,
@@ -990,7 +993,7 @@ input[type="submit"]:disabled {
   }
 
   .contact {
-    padding: 60px 160px;
+    padding: 60px 130px;
   }
 
   .cont {
@@ -1000,7 +1003,7 @@ input[type="submit"]:disabled {
   }
 
   .contact-text {
-    width: 450px;
+    width: 30vw;
     height: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -1011,7 +1014,7 @@ input[type="submit"]:disabled {
   }
 
   .input {
-    width: 700px;
+    width: 45vw;
     height: 18px;
     left: 16px;
     right: 16px;
@@ -1083,10 +1086,7 @@ input[type="submit"]:disabled {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
+  
   .lo {
     font-size: 17px;
     width: 90px;
@@ -1102,7 +1102,7 @@ input[type="submit"]:disabled {
 
   .sub {
     display: block;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 52px;
   }
 
@@ -1133,20 +1133,19 @@ input[type="submit"]:disabled {
   }
 
   .title {
-    font-size: 20px;
-    width: 300px;
+    font-size: 27px;
+    margin-bottom: 10px;
   }
 
   .para p {
-    width: 300px;
     line-height: 1rem;
-    font-size: 18px;
-    margin-bottom: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .icons {
-    margin-left: -30px;
-    gap: 30px;
+    margin-left: -34px;
+    gap: 40px;
   }
 
   .not,
@@ -1156,6 +1155,10 @@ input[type="submit"]:disabled {
   .name,
   .content {
     display: none;
+  }
+
+  .cont{
+    padding: 3.5rem 64px;
   }
 
   .modal {
