@@ -194,7 +194,6 @@ body {
 .work {
   background-color: #fff;
   padding: 120px;
-  
 }
 
 .work-title1 {
@@ -465,7 +464,7 @@ body {
 }
 
 .cont {
-  padding: 3.5rem 0rem;
+  padding: 3.5rem 0;
 }
 
 .contact-text {
@@ -760,7 +759,6 @@ input[type="submit"]:disabled {
     font-size: 15px;
   }
 
-
   .section1 {
     gap: 10px;
     padding-left: 5px;
@@ -828,6 +826,7 @@ input[type="submit"]:disabled {
 
   .imge-img {
     margin-top: 35px;
+    width: 55vw;
   }
 
   .imge-txt {
@@ -836,7 +835,7 @@ input[type="submit"]:disabled {
   }
 
   .work1-img {
-    width: 684px;
+    width: 47vw;
     height: 448px;
     box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
     transition: transform 0.3s;
@@ -855,13 +854,14 @@ input[type="submit"]:disabled {
   }
 
   .work1-para {
-    width: 448px;
+    width: 30vw;
     height: 140px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 35px;
   }
 
   .work1-list li {
@@ -889,6 +889,7 @@ input[type="submit"]:disabled {
     flex-direction: column;
     gap: 15px;
   }
+
   .oneg {
     display: flex;
     gap: 15px;
@@ -981,7 +982,7 @@ input[type="submit"]:disabled {
 
   .lang {
     flex-direction: row;
-    gap: 25%;
+    gap: 15%;
     align-items: initial;
     padding: 15% 0;
     padding-right: 130px;
@@ -1086,7 +1087,6 @@ input[type="submit"]:disabled {
 }
 
 @media screen and (max-width: 768px) {
-  
   .lo {
     font-size: 17px;
     width: 90px;
@@ -1096,13 +1096,13 @@ input[type="submit"]:disabled {
 
   .main {
     display: block;
-    font-size: 52px;
+    font-size: 42px;
     line-height: 52px;
   }
 
   .sub {
     display: block;
-    font-size: 38px;
+    font-size: 28px;
     line-height: 52px;
   }
 
@@ -1133,7 +1133,7 @@ input[type="submit"]:disabled {
   }
 
   .title {
-    font-size: 27px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 
@@ -1157,7 +1157,16 @@ input[type="submit"]:disabled {
     display: none;
   }
 
-  .cont{
+  .work {
+    padding: 120px 40px;
+  }
+
+  .work2-para {
+    width: 295px;
+    height: 87px;
+  }
+
+  .cont {
     padding: 3.5rem 64px;
   }
 
